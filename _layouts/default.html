@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }} — {{ site.tagline }}</title>
+  <meta name="description" content="{{ site.description | strip_newlines }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title }} — {{ site.tagline }}">
+  <meta property="og:description" content="{{ site.description | strip_newlines }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/faythe-wings.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="{{ '/assets/img/faythe-wings-small.png' | relative_url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <nav class="topbar">
+    <a class="wordmark" href="#top">AKI<span>KURI</span></a>
+    <div class="navlinks">
+      <a href="#story">Story</a>
+      <a href="#characters">Characters</a>
+      <a href="#shop">Shop</a>
+    </div>
+  </nav>
+
+  {{ content }}
+
+  <footer class="footer">
+    <p class="footer-mark">AKI<span>KURI</span></p>
+    <p>&copy; 2026 AKIKURI. Faythe Lovelace and all AKIKURI characters, artwork, and story are original works. All rights reserved.</p>
+    <p class="footer-soon">Game in early concept development — follow along on <a href="{{ site.etsy_shop }}">Etsy</a>.</p>
+  </footer>
+
+</body>
+</html>
