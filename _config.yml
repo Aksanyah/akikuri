@@ -1,9 +1,9 @@
 title: AKIKURI
-tagline: Pumpkin Spice Cyberpunk
+tagline: Pumpkin Spice Cyberpunker
 description: >-
   AKIKURI — The Story of How I, an Autumn Christian Girl, Toppled the Tech
   Industry's Demon Kings and Became the World's Strongest Pumpkin Spice
-  Cyberpunker. A new concept coming soon.
+  Cyberpunker. A new book and game concept coming soon.
 url: "https://akikuri.net"
 baseurl: ""
 
@@ -12,9 +12,9 @@ baseurl: ""
 # Every button on the site reads from here, so this is the only
 # place you need to edit.
 # ---------------------------------------------------------------
-etsy_shop: "https://www.etsy.com/shop/YOUR-SHOP-NAME"
-etsy_sticker: "https://www.etsy.com/shop/YOUR-SHOP-NAME"
-etsy_figure: "https://www.etsy.com/shop/YOUR-SHOP-NAME"
+etsy_shop: "https://www.etsy.com/shop/AksanyahStudios"
+etsy_sticker: "https://www.etsy.com/shop/AksanyahStudios"
+etsy_figure: "https://www.etsy.com/shop/AksanyahStudios"
 
 exclude:
   - README.md
