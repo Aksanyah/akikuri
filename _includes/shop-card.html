@@ -1,0 +1,20 @@
+{%- comment -%}
+Renders one shop product card.
+
+Usage:  {% include shop-card.html product=product %}
+
+Reads from the product's front matter (see _shop/*.md):
+  title  product name
+  badge  optional corner label, e.g. "Coming soon"; omit to hide it
+  etsy_url  Etsy listing link; falls back to the shop-wide site.etsy_shop.
+            Named etsy_url, not url, because Jekyll gives every collection
+            document a built-in url attribute that would always win.
+  cta    optional button label, defaults to "View on Etsy"
+The product's description is the Markdown body of the product file.
+{%- endcomment -%}
+<div class="whitebox shop-card">
+  {% if include.product.badge %}<span class="badge">{{ include.product.badge }}</span>{% endif %}
+  <h3>{{ include.product.title }}</h3>
+  {{ include.product.content }}
+  <a class="btn" href="{{ include.product.etsy_url | default: site.etsy_shop }}" target="_blank" rel="noopener">{{ include.product.cta | default: "View on Etsy" }}</a>
+</div>

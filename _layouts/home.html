@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<a id="top"></a>
+
+<!-- ============ HERO / STORY ============ -->
+<section class="hero" id="story">
+  <div class="hero-inner">
+    <div class="hero-art">
+      <img src="{{ page.art | relative_url }}"
+           srcset="{{ page.art_small | relative_url }} 540w, {{ page.art | relative_url }} 1080w"
+           sizes="(max-width: 900px) 90vw, 460px"
+           alt="{{ page.art_alt }}"
+           width="1080" height="1080">
+    </div>
+
+    <div class="whitebox">
+      <p class="eyebrow">{{ page.eyebrow }}</p>
+      <h1>{{ page.heading }}</h1>
+      <p class="subtitle">{{ page.subtitle }}</p>
+
+      <div class="story-text">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHARACTERS ============ -->
+<section class="section" id="characters">
+  <div class="section-inner">
+    <h2 class="section-title">{{ page.characters_title | default: "Characters" }}</h2>
+    <div class="char-grid">
+      {% assign characters = site.characters | sort: "order" %}
+      {% for character in characters %}
+        {% include character-card.html character=character %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOP ============ -->
+<section class="section" id="shop">
+  <div class="section-inner">
+    <h2 class="section-title">{{ page.shop_title | default: "Shop" }}</h2>
+
+    <div class="whitebox shop-intro">
+      <p>{{ page.shop_intro }}</p>
+      <a class="btn btn-big" href="{{ site.etsy_shop }}" target="_blank" rel="noopener">{{ page.shop_cta | default: "Visit the Etsy Store" }}</a>
+    </div>
+
+    <div class="shop-grid">
+      {% assign products = site.shop | sort: "order" %}
+      {% for product in products %}
+        {% include shop-card.html product=product %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

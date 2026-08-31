@@ -1,0 +1,23 @@
+{%- comment -%}
+Renders one character card.
+
+Usage:  {% include character-card.html character=character %}
+
+Reads from the character's front matter (see _characters/*.md):
+  name            display name
+  jp              optional Japanese name, shown small beside the name
+  role            one-line role, styled as .char-role
+  image           art path; omit it to render the "?" mystery tile instead
+  mystery_variant optional extra class on the "?" tile (e.g. "demon")
+The card's paragraph text is the Markdown body of the character file.
+{%- endcomment -%}
+<div class="whitebox char-card{% unless include.character.image %} char-mystery{% endunless %}">
+  {% if include.character.image %}
+    <img src="{{ include.character.image | relative_url }}" alt="{{ include.character.name }}" loading="lazy" width="540" height="540">
+  {% else %}
+    <div class="mystery-art{% if include.character.mystery_variant %} {{ include.character.mystery_variant }}{% endif %}">?</div>
+  {% endif %}
+  <h3>{{ include.character.name }}{% if include.character.jp %} <span class="jp">{{ include.character.jp }}</span>{% endif %}</h3>
+  <p class="char-role">{{ include.character.role }}</p>
+  {{ include.character.content }}
+</div>

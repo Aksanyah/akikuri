@@ -8,13 +8,25 @@ url: "https://akikuri.net"
 baseurl: ""
 
 # ---------------------------------------------------------------
-# Shop links — replace these placeholders with real Etsy URLs.
-# Every button on the site reads from here, so this is the only
-# place you need to edit.
+# Shop link — the big "Visit the Etsy Store" button, and the
+# fallback for any product with no url of its own.
+# Individual listings live in _shop/*.md
 # ---------------------------------------------------------------
 etsy_shop: "https://www.etsy.com/shop/YOUR-SHOP-NAME"
-etsy_sticker: "https://www.etsy.com/shop/YOUR-SHOP-NAME"
-etsy_figure: "https://www.etsy.com/shop/YOUR-SHOP-NAME"
+
+# ---------------------------------------------------------------
+# Content collections. Each entry is one Markdown file:
+#   _characters/*.md  -> the Characters grid
+#   _shop/*.md        -> the Shop grid
+# output: false means they are never published as standalone
+# pages; they only render inside the grids on the home page.
+# Cards are ordered by the "order:" value in their front matter.
+# ---------------------------------------------------------------
+collections:
+  characters:
+    output: false
+  shop:
+    output: false
 
 exclude:
   - README.md
