@@ -9,11 +9,11 @@ subtitle: >-
 art: /assets/img/faythe-wings.png
 art_small: /assets/img/faythe-wings-small.png
 art_alt: >-
-  Faythe Lovelace — AKIKURI key art: an autumn-dressed girl with a hat, scarf,
-  and glasses standing before neon cyberpunk holograms
+  Faythe Lovelace — AkiKuri key art: an autumn-dressed Christian girl wearing a tan hat, yellow scarf, cream-colored sweater, blue jeans, brown knee-high boots,
+  and glasses surrounded by angelic neon cyberpunk holograms
 characters_title: Characters
 shop_title: Shop
-shop_intro: Official AKIKURI merch is coming to Etsy — grab a piece of the Heap before the game exists.
+shop_intro: Buy official AkiKuri merch at Aksanyah Studios' Etsy store. Have a little Faythe in your future!
 shop_cta: Visit the Etsy Store
 ---
 
