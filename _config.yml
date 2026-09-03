@@ -12,7 +12,7 @@ baseurl: ""
 # fallback for any product with no url of its own.
 # Individual listings live in _shop/*.md
 # ---------------------------------------------------------------
-etsy_shop: "https://www.etsy.com/shop/YOUR-SHOP-NAME"
+etsy_shop: "https://www.etsy.com/shop/AksanyahStudios"
 
 # ---------------------------------------------------------------
 # Content collections. Each entry is one Markdown file:
