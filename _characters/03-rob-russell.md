@@ -1,6 +1,7 @@
 ---
 order: 3
 name: "Rob 'The Rustler' Russell"
+jp: ロブ・ラッセル
 role: Razor Whip Wielding Cowpunk
 image: assets/img/RobRussellINSTA copy.png
 ---
